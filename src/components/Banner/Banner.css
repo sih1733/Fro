@@ -1,0 +1,105 @@
+/* Banner.css */
+.banner {
+  background-color: black;
+  color: white;
+  padding-bottom: 3rem;
+  position: relative;
+  z-index: 50;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.upload-section {
+  text-align: center;
+}
+
+.title {
+  color: #0369a1; /* Sky blue */
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.upload-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem; /* Small gap between input and button */
+}
+
+.file-input {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db; /* Gray border */
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: auto; /* Adjust width to fit content */
+  background-color: #0369a1; /* Sky blue */
+
+  /* Hover effect for the input button */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.file-input:hover {
+  background-color: #030e26; /* Darker blue for hover */
+  border-color: #030e26; /* Darker border color */
+}
+
+.convert-button {
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #60A5FA; /* Sky blue */
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 150px; /* Set consistent width for both */
+
+  /* Hover effect for the convert button */
+  transition: background-color 0.3s ease;
+}
+
+.convert-button:hover {
+  background-color: #030e26; /* Darker blue for hover */
+}
+
+.convert-button:disabled {
+  background-color: #60A5FA;
+  cursor: not-allowed;
+}
+
+.image-previews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.image-preview {
+  text-align: center;
+}
+
+.preview-title {
+  color: #d1d5db; /* Gray */
+  margin-bottom: 0.5rem;
+}
+
+.preview-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #d1d5db; /* Gray border */
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}

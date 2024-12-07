@@ -1,0 +1,57 @@
+.banner2 {
+  background-color: black;
+  color: white;
+  padding-bottom: 3rem;
+  position: relative;
+  z-index: 50;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.file-input {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #00aaff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-input:hover {
+  background-color: #00aaff;
+  color: black;
+}
+
+.image-preview,
+.colorized-image {
+  margin-top: 1rem;
+  max-width: 100%;
+  max-height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.placeholder-text {
+  color: gray;
+  font-size: 1rem;
+  text-align: center;
+}
